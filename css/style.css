@@ -34,135 +34,126 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-family);
+
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.header{
-    background-image: url(../images/bg-mobile-light.jpg);
-    background-size: cover;
-    padding: 3rem 1.2rem;
+.container-bg{
+
+    background-image: url(../images/bg-mobile-dark.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 20vh;
 }
-.header-top{
+.container-bg-top{
     display: flex;
+    padding: 3rem 1.5rem;
     justify-content: space-between;
     align-items: center;
-    
 }
-.header-top img{
-    width: 1.2rem;
-}
-.header-top h3{
+.container-bg-top h1{
     color: var(--Very-Light-Gray);
-    font-size: 1.5rem;
     letter-spacing: 10px;
-
 }
-.header-center{
+.icon-sun{
+    cursor: pointer;
+}
+.container-bg-center{
+    padding: 1.2rem;
+}
+.container-bg-center form{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 2rem;
-    
-}
-.header-center input{
     width: 100%;
-    padding: 1.1rem;
+    transform: translateY(-40px);
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    padding: 0.3rem;
     border-radius: 5px;
-    border: none;
-    outline: none; /*Para sacar el border que se genera al hacerle click*/
+}
+.inputTarea:focus{
+    color: white; /*Para que al escribir sea blanco*/ 
     
 }
-
-::placeholder{
-   color: var(--Dark-Grayish-Blue);
-   padding-left: 2rem;
+.circle{
+    width: 1.2em;
+    height: 1.2em;
+    border: 2px solid gray;
+    border-radius: 100%;
+    margin-left: 0.5rem;
 }
-.main{
-    padding: 0.2rem 1.1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
- 
-   
-
-}
-.wrapper{
-    background-color: var(--Very-Light-Gray);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transform: translateY(-30px);
+.container-bg-center input{
+    width: 85%;
     padding: 0.5rem;
-    width: 100%;
-  
-
+    margin: 0 auto;
+    border: none;
+    outline: none;
+    background-color: var(--Very-Dark-Desaturated-Blue);
 }
 .tareas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
+    background-color: var(--Very-Dark-Desaturated-Blue);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 .tarea{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem;
-    border-bottom: 2px solid black;
-    
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.938);
 }
-.tarea div{
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-}
-.tarea div p{
-   font-size: 12px;
-   font-weight: 100;
-   color: var(--Very-Dark-Grayish-Blue);
-}
-.circle {
-    width: 1.1em;
-    height: 1.1em;
-    background-color: white;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    cursor: pointer;
-}
-.cruz{
+.tarea img{
     width: 0.8em;
     height: 0.8em;
     cursor: pointer;
 }
-.row{
+.input-tarea{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+.input-tarea input{
+    cursor: pointer;
+}
+.input-tarea p{
+    font-size: 12px;
+    color: var(--Very-Light-Gray);
+
+}
+
+.itemsLeft-clear{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.2rem 0.2rem;
+    padding: 0.5rem;
 }
-.row p{
+.itemsLeft-clear p{
     color: var(--Dark-Grayish-Blue);
     font-size: 12px;
 }
-.wrapper-column{
+
+
+.categorias{
+    background-color: var(--Very-Dark-Desaturated-Blue);
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    width: 89.5%;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 1.2rem;
+    border-radius: 5px;
+    margin-top: 2rem;
 }
-.wrapper-row{
-    display: flex;
-    gap: 2rem;
-}
-.wrapper-row p{
+.categorias p{
     color: var(--Dark-Grayish-Blue);
-    font-size: 13px;
+    font-size: 14px;
     cursor: pointer;
 }
-.wrapper-row p:nth-child(1){
+.categorias p:nth-child(1){
     color: var(--Bright-Blue);
 }
-.p-ultimate{
-    color: var(--Dark-Grayish-Blue);
-    font-size: 13px;
-}
-
 
